@@ -1,43 +1,64 @@
-![img](https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png)
-> Almost a circle
 
-## Background Context
-The AirBnB project is a big part of the Higher level curriculum. This project will help you be ready for it.
+# Unittests for project 0x0C-Almost a circle.
+## Tests Assignments:
+Alexandre: to_dictionary rectangle, __str__ rectangle
 
-In this project, you will review everything about Python:
+Siham: from json string, __init__ square
 
-* Import
-* Exceptions
-* Class
-* Private attribute
-* Getter/Setter
-* Class method
-* Static method
-* Inheritance
-* Unittest
-* Read/Write file
+Pierre: __init__ base, create base
 
-You will also learn about
+Nicolas: size.setter square,  load_from_file base
 
-* ```args``` and ```kwargs```
-* Serialization/Deserialization
-* JSON
+Romi: update rectangle, area rectangle
 
-![Meme](https://media2.giphy.com/media/unQ3IJU2RG7DO/200w.webp?cid=ecf05e47vwvnanfaua5wktd4b2fknxalp7wtxh6peo7mok14&rid=200w.webp&ct=g)
+Greg: display rectangle, __str__ square
 
-## Resources
-1. [*args and **kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
-2. [JSON ecoder and decoder](https://docs.python.org/3/library/json.html)
-3. [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)
-4. [Python tests cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)
+Tommy: to_json_string, update square
 
-## Learning objectives
-By the end of this project you should be able to [explain to anyone](https://fs.blog/feynman-learning-technique/) the following concepts __Without the help fo Google__ 
+Côme: setter x2, save_to_file base
 
+Raphael: __init__ rectangle, setter x2
 
-* [X] What is Unit testing and how to implement it in a large project
-* [X] How to serialize and deserialize a Class
-* [X] How to write and read a JSON file
-* [X] What is ```*args``` and how to use it
-* [X] What is ```**kwargs``` and how to use it
-* [X] How to handle named arguments in a function
+Lucille: to_dictionary square
+
+This repository is a collaboration between students of Holberton  France
+### [0. If it's not tested it doesn't work]
+* All your files, classes and methods must be unit tested and be PEP 8 validated.
+### [1. Base class]
+* Write the first class Base:
+### [2. First Rectangle]
+* Write the class Rectangle that inherits from Base:
+### [3. Validate attributes]
+* Update the class Rectangle by adding validation of all setter methods and instantiation (id excluded):
+### [4. Area first]
+* Update the class Rectangle by adding the public method def area(self): that returns the area value of the Rectangle instance.
+### [5. Display #0]
+* Update the class Rectangle by adding the public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here.
+### [6. __str__]
+* Update the class Rectangle by overriding the __str__ method so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+### [7. Display #1]
+* Update the class Rectangle by improving the public method def display(self): to print in stdout the Rectangle instance with the character # by taking care of x and y
+### [8. Update #0]
+* Update the class Rectangle by adding the public method def update(self, *args): that assigns an argument to each attribute:
+### [9. Update #1]
+* Update the class Rectangle by updating the public method def update(self, *args): by changing the prototype to update(self, *args, **kwargs) that assigns a key/value argument to attributes:
+### [10. And now, the Square!]
+* Write the class Square that inherits from Rectangle:
+### [11. Square size]
+* Update the class Square by adding the public getter and setter size
+### [12. Square update]
+* Update the class Square by adding the public method def update(self, *args, **kwargs) that assigns attributes:
+### [13. Rectangle instance to dictionary representation]
+* Update the class Rectangle by adding the public method def to_dictionary(self): that returns the dictionary representation of a Rectangle:
+### [14. Square instance to dictionary representation]
+* Update the class Square by adding the public method def to_dictionary(self): that returns the dictionary representation of a Square:
+### [15. Dictionary to JSON string]
+* JSON is one of the standard formats for sharing data representation.
+### [16. JSON string to file]
+* Update the class Base by adding the class method def save_to_file(cls, list_objs): that writes the JSON string representation of list_objs to a file:
+### [17. JSON string to dictionary]
+* Update the class Base by adding the static method def from_json_string(json_string): that returns the list of the JSON string representation json_string:
+### [18. Dictionary to Instance]
+* Update the class Base by adding the class method def create(cls, **dictionary): that returns an instance with all attributes already set:
+### [19. File to instances]
+* Update the class Base by adding the class method def load_from_file(cls): that returns a list of instances:
